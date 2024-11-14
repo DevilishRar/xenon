@@ -99,13 +99,11 @@
 
     <section class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
       <div class="section-bg p-6 flex-grow md:w-1/2 flex flex-col space-y-4 relative">
-        <div class="flex justify-between items-start">
-          <div>
-            <h2 class="text-gradient text-4xl font-black">Xenon</h2>
-            <p class="text-gray-500 text-sm leading-relaxed mt-2">A top selling product within the industry of overwatch cheating. You won't regret choosing us and will definitely enjoy working with us!</p>
-          </div>
-          <img src="productthumbnail.png" alt="Xenon product icon" class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-md border border-gray-800" />
+        <div class="relative">
+          <h2 class="text-gradient text-4xl font-black">Xenon</h2>
+          <span class="text-gradient-blur text-4xl font-black">Xenon</span>
         </div>
+        <p class="text-gray-500 text-sm leading-relaxed mt-2">A top selling product within the industry of overwatch cheating. You won't regret choosing us and will definitely enjoy working with us!</p>
         <img src="banner.png" alt="Xenon product banner" class="w-full h-48 md:h-60 rounded-md border border-gray-800 hover-card" />
       </div>
       
@@ -165,7 +163,24 @@
       </div>
     </section>
 
-    <footer class="py-8"></footer>
+<section class="section-bg p-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-8">
+  <div class="md:w-1/2 flex flex-col justify-center relative space-y-2">
+    <div class="relative">
+      <h2 class="text-gradient text-3xl font-black">Watch Our Showcase Video!</h2>
+      <span class="text-gradient-blur text-3xl font-black">Watch Our Showcase Video!</span>
+    </div>
+    <p class="text-gray-500 text-base leading-relaxed">Take A Look at our newest Showcase Video!<br>With a Gameplay scene and Real Time Usage.</p>
+  </div>
+  <div class="md:w-1/2 aspect-w-16 aspect-h-9">
+    <video controls class="w-full h-full rounded-md border border-gray-800">
+      <source src="showcase.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+    <footer class="py-1"></footer>
   </main>
 
   <script>
