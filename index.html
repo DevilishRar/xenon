@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xenon Ow</title>
+  <meta content="Xenon Ow Home" property="og:title" />
+  <meta content="This is the Main Page" property="og:description" />
+  <meta content="https://getxenon.vercel.app" property="og:url" />
+  <meta content="logo.png" property="og:image" />
+  <meta content="#0a0a0a" data-react-helmet="true" name="theme-color" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000000;
+      font-family: 'Inter', sans-serif;
+      overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #151515;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 5px;
+    }
+    .text-gradient {
+      background: radial-gradient(50% 50% at 50% 50%, #4c7a81 0%, #88dae7 53.5%, #4c7a81 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .text-gradient-blur {
+      background: radial-gradient(50% 50% at 50% 50%, #4c7a81 0%, #88dae7 53.5%, #4c7a81 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      filter: blur(3px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
+    .price-gradient {
+      background: conic-gradient(from 222.63deg at 50% 50%, #8a8a8a 0deg, #414141 82.8deg, #242424 154.8deg, #444444 277.2deg, #8a8a8a 360deg);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .section-bg {
+      background: rgba(21, 21, 21, 0.5);
+      border: 1px solid #292929;
+      backdrop-filter: blur(7.35px);
+      border-radius: 13px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .hover-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+    .highlight {
+      animation: highlight 1s ease-in-out forwards;
+    }
+    @keyframes highlight {
+      0% { background-color: rgba(255, 255, 0, 0.4); }
+      100% { background-color: transparent; }
+    }
+  </style>
+</head>
+<body class="text-white">
+  <header class="w-full h-16 bg-opacity-50 bg-[#151515] border-b border-gray-700 flex items-center justify-center px-4 md:px-8">
+    <div class="flex items-center space-x-4">
+      <img src="productthumbnail.png" alt="Logo icon" class="w-10 h-10 rounded-sm" />
+      <span class="text-2xl font-black">Xenon</span>
+    </div>
+    <nav class="flex space-x-10 text-lg font-medium ml-auto mr-auto">
+      <a href="index.html" class="hover:text-gray-400">Home</a>
+      <a href="info.html" class="hover:text-gray-400">Info</a>
+      <a href="#" class="hover:text-gray-400" onclick="highlightStoreSection()">Store</a>
+    </nav>
+  </header>
+
+  <main class="px-2 md:px-4 lg:px-6 space-y-4 mt-4 max-w-screen-2xl mx-auto">
+
+    <section class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+      <div class="section-bg p-6 md:w-[48%] flex flex-col space-y-4 relative">
+        <div class="relative">
+          <h2 class="text-gradient text-4xl font-black">Xenon</h2>
+          <span class="text-gradient-blur text-4xl font-black">Xenon</span>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed">A top selling product within the industry of overwatch cheating. You won't regret choosing us and will definitely enjoy working with us!</p>
+        <img src="banner.png" alt="Xenon product banner" class="rounded-md border border-gray-800 hover-card" />
+      </div>
+      
+      <div id="purchaseSection" class="section-bg p-6 md:w-[52%] flex flex-col space-y-4">
+        <h2 class="text-3xl font-black">Purchase Our External</h2>
+        <p class="text-gray-500 text-sm leading-relaxed">Are the prices too expensive? You can negotiate with us in the Discord! Don't forget to join with us in Discord, where you can meet other members who have experiences with Xenon.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+          <a href="https://xenonow.sell.app/product/xenon-day-key?store=xenonow" target="_blank" class="section-bg p-4 hover-card flex flex-col items-start space-y-2 w-full">
+            <h3 class="text-lg font-black">1 Day Sub</h3>
+            <img src="productthumbnail.png" alt="1 Day Subscription icon" class="rounded-md" />
+            <p class="text-gray-500 font-black text-lg">£3.50</p>
+          </a>
+          <a href="https://xenonow.sell.app/product/xenon-3day-key?store=xenonow" target="_blank" class="section-bg p-4 hover-card flex flex-col items-start space-y-2 w-full">
+            <h3 class="text-lg font-black">3 Days Sub</h3>
+            <img src="productthumbnail.png" alt="3 Days Subscription icon" class="rounded-md" />
+            <p class="text-gray-500 font-black text-lg">£6.50</p>
+          </a>
+          <a href="https://xenonow.sell.app/product/xenon-month-key?store=xenonow" target="_blank" class="section-bg p-4 hover-card flex flex-col items-start space-y-2 w-full">
+            <h3 class="text-lg font-black">1 Month Sub</h3>
+            <img src="productthumbnail.png" alt="1 Month Subscription icon" class="rounded-md" />
+            <p class="text-gray-500 font-black text-lg">£45.00</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bg p-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+        <div>
+          <h2 class="text-3xl font-black">History Of Bans</h2>
+          <p class="text-gray-500 text-sm leading-relaxed">Ever been banned while using our product? Submit in the Discord for us to add a count! Which is possibly not going to happen because we're a good product.</p>
+        </div>
+        <div class="text-center">
+          <h2 class="text-3xl font-black">Currently Banned</h2>
+          <p class="price-gradient text-5xl font-black italic">0!</p>
+          <p class="text-gray-500 text-xs mt-2">Check it out later in case of any new bans!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+      <div class="section-bg p-6 md:w-1/2 flex flex-col justify-between space-y-4 relative">
+        <div class="relative">
+          <h2 class="text-gradient text-4xl font-black">Come Join Us In The Discord!</h2>
+          <span class="text-gradient-blur text-4xl font-black">Come Join Us In The Discord!</span>
+        </div>
+        <p class="text-gray-500 text-base leading-relaxed">Have something to say? Don't be afraid to reach out! You are welcome to our Discord doors at any time—feel free to join!</p>
+      </div>
+      <div class="bg-gradient-to-b from-[#003C45] to-[#4C7A81] p-6 md:w-1/2 rounded-md flex items-center justify-center border border-gray-800 relative">
+        <span class="text-gradient-blur text-5xl font-black absolute top-0 left-0 w-full h-full flex items-center justify-center">DISCORD.GG/XENOW</span>
+        <p class="text-gradient text-5xl font-black relative z-10">DISCORD.GG/XENOW</p>
+      </div>
+    </section>
+
+    <footer class="py-1"></footer>
+  </main>
+
+  <script>
+    function highlightStoreSection() {
+      const purchaseSection = document.getElementById("purchaseSection");
+      purchaseSection.classList.add("highlight");
+      setTimeout(() => {
+        purchaseSection.classList.remove("highlight");
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
