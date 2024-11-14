@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xenon Info</title>
+  <meta content="Xenon Ow Info" property="og:title" />
+  <meta content="This is the Info Page" property="og:description" />
+  <meta content="https://getxenon.vercel.app" property="og:url" />
+  <meta content="logo.png" property="og:image" />
+  <meta content="#0a0a0a" data-react-helmet="true" name="theme-color" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000000;
+      font-family: 'Inter', sans-serif;
+      overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #151515;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    .section-bg {
+      background: rgba(21, 21, 21, 0.5);
+      border: 1px solid #292929;
+      backdrop-filter: blur(7.35px);
+      border-radius: 13px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="text-white">
+  <header class="w-full h-16 bg-opacity-50 bg-[#151515] border-b border-gray-700 flex items-center justify-center px-4 md:px-8">
+    <div class="flex items-center space-x-4">
+      <img src="logo.png" alt="Logo icon" class="w-10 h-10 rounded-sm" />
+      <span class="text-2xl font-black">Xenon</span>
+    </div>
+    <nav class="flex space-x-10 text-lg font-medium ml-auto mr-auto">
+      <a href="index.html" class="hover:text-gray-400">Home</a>
+      <a href="info.html" class="hover:text-gray-400">Info</a>
+    </nav>
+  </header>
+
+  <main class="px-2 md:px-4 lg:px-6 space-y-6 mt-4 max-w-screen-2xl mx-auto">
+
+    <section class="section-bg p-8 space-y-6">
+      <h2 class="text-5xl font-black text-gradient">Overwatch Cheat 2024</h2>
+      <p class="text-gray-500 text-lg leading-relaxed">Xenon is a top-tier external cheat for Overwatch with advanced features, ensuring an undetected experience. Used by thousands of satisfied customers, it provides an advantage without compromising security.</p>
+      
+      <h3 class="text-2xl font-bold text-white">Key Features:</h3>
+      <ul class="list-disc list-inside text-gray-500 text-lg space-y-5">
+        <li><span class="font-semibold">Undetectable</span>: Bypasses Overwatch Anti-Cheat (2024) for long-term account safety.</li>
+        <li><span class="font-semibold">Feature-Rich</span>: Includes Aimbot, ESP, Triggerbot, and advanced customization.</li>
+        <li><span class="font-semibold">Regular Updates</span>: Frequently updated by developers to remain undetected and effective.</li>
+        <li><span class="font-semibold">24/7 Support</span>: Dedicated support team available for any assistance.</li>
+        <li><span class="font-semibold">Ease of Use</span>: Detailed tutorials and setup guides included.</li>
+        <li><span class="font-semibold">Customizable</span>: Highly customizable settings to fit various playstyles.</li>
+        <li><span class="font-semibold">Positive Reviews</span>: Thousands of satisfied customers provide testimonials.</li>
+        <li><span class="font-semibold">Flexible Plans</span>: Free trial and multiple subscription options available.</li>
+        <li><span class="font-semibold">Community Trusted</span>: Large community with positive feedback and verified testimonials.</li>
+      </ul>
+
+      <p class="text-gray-500 text-lg leading-relaxed">Join our Discord community to read more reviews, stay updated with new features, and connect with other Xenon users who enhance their Overwatch gaming experience with our tool.</p>
+    </section>
+
+    <footer class="py-1"></footer>
+  </main>
+</body>
+</html>
